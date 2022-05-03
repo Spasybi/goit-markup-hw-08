@@ -1,0 +1,6 @@
+.footer {
+    display: flex;
+}
+.footer-list:not(:last-child) {
+    margin-bottom: 9px;
+}

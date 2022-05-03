@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./css/main.min.css" rel="stylesheet" />
+    <title>Webstudio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="navigation">
+          <a class="logo link" href="index.html"
+            >Web<span class="second-logo-color">Studio</span></a
+          >
+          <ul class="nav-list list">
+            <li class="nav-list__item">
+              <a class="nav-list__link link" href="index.html">Студия</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link active link" href="portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-list list">
+          <li class="">
+            <a class="mail link" href="mailto:info@devstudio.com">
+              <svg class="svg-address" width="16" height="12">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="">
+            <a class="number link" href="tel:+380961111111">
+              <svg class="svg-address" width="10" height="16">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="main-section">
+        <div class="main-button container">
+          <ul class="button-list list">
+            <li class="button-list__item">
+              <button class="button-list__btn" type="button">Все</button>
+            </li>
+            <li class="button-list__item">
+              <button class="button-list__btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="button-list__item">
+              <button class="button-list__btn" type="button">Приложения</button>
+            </li>
+            <li class="button-list__item">
+              <button class="button-list__btn" type="button">Дизайн</button>
+            </li>
+            <li class="button-list__item">
+              <button class="button-list__btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+        <div class="img-container container">
+          <ul class="img-list list">
+            <li class="img-list__item">
+              <a href="#" class="img-list__link">
+                <div class="img-list-wrapper">
+                  <img
+                    src="images/technokriak.jpg"
+                    alt="ноутбук"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="overlay">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="img-wrapper">
+                  <h2 class="img-list-subtitle">Технокряк</h2>
+                  <p class="img-list-paragraph">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="img-list__item">
+              <a href="#" class="img-list__link">
+                <div class="img-list-wrapper">
+                  <img
+                    src="images/poster.jpg"
+                    alt="баскетболисты"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="overlay">Постер New Orlean</p>
+                </div>
+                <div class="img-wrapper">
+                  <h2 class="img-list-subtitle">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="img-list-paragraph">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="img-list__item">
+              <a href="#" class="img-list__link">
+                <div class="img-list-wrapper">
+                  <img
+                    src="images/seafood.jpg"
+                    alt="seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="overlay">Ресторан Seafood</p>
+                </div>
+                <div class="img-wrapper">
+                  <h2 class="img-list-subtitle">Ресторан Seafood</h2>
+                  <p class="img-list-paragraph">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="img-list__item">
+              <a href="#" class="img-list__link">
+                <div class="img-list-wrapper">
+                  <img
+                    src="images/prime.jpg"
+                    alt="наушники"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="overlay">Проект Prime</p>
+                </div>
+                <div class="img-wrapper">
+                  <h2 class="img-list-subtitle">Проект Prime</h2>
+                  <p class="img-list-paragraph">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="img-list__item">
+              <a href="#" class="img-list__link">
+                <div class="img-list-wrapper">
+                  <img
+                    src="images/boxes.jpg"
+                    alt="коробки"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="overlay">Проект Boxes</p>
+                </div>
+                <div class="img-wrapper">
+                  <h2 class="img-list-subtitle">Проект Boxes</h2>
+                  <p class="img-list-paragraph">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="img-list__item">
+              <a href="#/" class="img-list__link">
+                <div class="img-list-wrapper">
+                  <img
+                    src="images/borders.jpg"
+                    alt="монитор"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="overlay">Inspiration has no Borders</p>
+                </div>
+                <div class="img-wrapper">
+                  <h2 class="img-list-subtitle">Inspiration has no Borders</h2>
+                  <p class="img-list-paragraph">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="img-list__item">
+              <a href="#" class="img-list__link">
+                <div class="img-list-wrapper">
+                  <img
+                    src="images/lim_edition.jpg"
+                    alt="книга"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="overlay">Издание Limited Edition</p>
+                </div>
+                <div class="img-wrapper">
+                  <h2 class="img-list-subtitle">Издание Limited Edition</h2>
+                  <p class="img-list-paragraph">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="img-list__item">
+              <a href="#" class="img-list__link">
+                <div class="img-list-wrapper">
+                  <img
+                    src="images/lab.jpg"
+                    alt="бирка"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="overlay">Проект LAB</p>
+                </div>
+                <div class="img-wrapper">
+                  <h2 class="img-list-subtitle">Проект LAB</h2>
+                  <p class="img-list-paragraph">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="img-list__item">
+              <a href="#" class="img-list__link">
+                <div class="img-list-wrapper">
+                  <img
+                    src="images/business.jpg"
+                    alt="печатает на ноутбуке"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="overlay">Growing Business</p>
+                </div>
+                <div class="img-wrapper">
+                  <h2 class="img-list-subtitle">Growing Business</h2>
+                  <p class="img-list-paragraph">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+      <div class="container footer">
+        <ul class="list">
+          <li class="">
+            <a class="logo link" href="index.html"
+              ><p>Web<span class="footer-logo-color">Studio</span></p></a
+            >
+          </li>
+          <li class="footer-list">
+            <address class="address">г.Киев, пр-т Леси Украинки, 26</address>
+          </li>
+          <li class="footer-list">
+            <a class="footer-contact-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com
+            </a>
+          </li>
+          <li class="footer-list">
+            <a class="footer-contact-number link" href="tel:+380961111111"
+              >+38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <div class="footer-social-link-container">
+          <ul class="list">
+            <li>
+              <h2 class="footer-subtitle">Присоединяйтесь</h2>
+            </li>
+            <li>
+              <ul class="social-list list">
+                <li class="social-list-item">
+                  <a class="footer-social-list-item-link" href="">
+                    <svg class="footer-social-list-svg">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a class="footer-social-list-item-link" href="">
+                    <svg class="footer-social-list-svg">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a class="footer-social-list-item-link" href="">
+                    <svg class="footer-social-list-svg">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a class="footer-social-list-item-link" href="">
+                    <svg class="footer-social-list-svg">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <form class="subscribe-form">
+            <b class="subtitle-subscribe-form">Подпишитесь на рассылку</b>
+            <label for="subscribe-form-label">
+              <input
+                class="subscribe-form-input"
+                name="mail-send"
+                type="text"
+                placeholder="E-mail"
+                lang="en"
+              />
+            </label>
+            <button type="submit" class="subscribe-btn">
+              Подписаться
+              <svg class="subscribe-btn-svg">
+                <use href="./images/sprite.svg#icon-sendicon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script scr="./js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+.footer-social-list-svg {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+}
+
+.footer-social-list-item-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--hover-focus-color);
+    }
+}
+
+.footer-social-link-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-left: 70px;
+}
+
+.footer-subtitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
