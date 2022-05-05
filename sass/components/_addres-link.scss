@@ -52,6 +52,66 @@
 .contacts-list__item:not(:first-child) {
     padding-top: 32px;
 }
+
+@media screen and (min-width: 768px) {
+    .svg-address {
+        display: block;
+        fill: var(--textcolor-paragraph-contacts);
+        margin-right: 10px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        .mail:hover &,
+        .mail:focus & {
+            fill: var(--hover-focus-color);
+        }
+        .number:hover &,
+        .number:focus & {
+            fill: var(--hover-focus-color);
+        }
+    }
+    .mail {
+        display: flex;
+        font-size: 12px;
+        line-height: 1.17;
+        color: var(--textcolor-paragraph-contacts);
+        align-items: center;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover,
+        &:focus {
+        color: var(--hover-focus-color);
+        }
+    }
+    .number {
+        display: flex;
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 1.17;
+        color: var(--textcolor-paragraph-contacts);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--hover-focus-color);
+        }
+    }
+    .contacts-list {
+        flex-direction: column;
+        margin-left: 84px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contacts-list {
+        flex-direction: row;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+    .number {
+        margin-top: 0;
+        margin-left: 50px;
+    }
+}
 // .mail {
 //     display: flex;
 //     font-family: "Roboto", sans-serif;
