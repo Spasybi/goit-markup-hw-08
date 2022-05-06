@@ -1,12 +1,29 @@
 .clients-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -15px;
+    justify-content: center;
 }
 
 .clients-list-item {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 15px;
+
+    @media screen and (max-width: 767px) {
+      width: calc((100% - 2 * 67px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 3 * 67px) / 3);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 6 * 30px) / 6);
+      margin: 15px;
+    }
 }
 
 .clients-list-svg {

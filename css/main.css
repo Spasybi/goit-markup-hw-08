@@ -51,7 +51,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -137,6 +137,10 @@ body {
 
 .footer-logo-color {
   color: #ffffff;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
 }
 
 .second-logo-color {
@@ -315,19 +319,27 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--textcolor-link-button);
+  margin-top: 0;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .user {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .second-main-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 94px;
+  justify-content: center;
 }
 
 .second-main-list-item {
@@ -407,13 +419,37 @@ body {
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15px;
+  justify-content: center;
 }
 
 .clients-list-item {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .clients-list-item {
+    width: calc((100% - 2 * 67px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list-item {
+    width: calc((100% - 3 * 67px) / 3);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list-item {
+    width: calc((100% - 6 * 30px) / 6);
+    margin: 15px;
+  }
 }
 
 .clients-list-svg {
@@ -466,6 +502,10 @@ body {
   color: #ffffff;
 }
 
+.footer-address {
+  margin-bottom: 60px;
+}
+
 .footer-social-list-svg {
   width: 20px;
   height: 20px;
@@ -491,7 +531,8 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 12px;
-  margin-left: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-subtitle {
@@ -1168,17 +1209,19 @@ body {
 
 .about-sec {
   background: #f5f4fa;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer {
-  display: flex;
+  text-align: center;
+  padding: 60px 15px;
 }
 
 .footer-list:not(:last-child) {
