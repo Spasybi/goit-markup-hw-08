@@ -347,6 +347,22 @@ body {
   height: 428px;
 }
 
+.second-main-list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .second-main-list-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .second-main-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .social-link-container {
   display: flex;
   justify-content: center;
@@ -1197,14 +1213,20 @@ body {
 }
 
 .about {
-  padding-top: 47px;
-  padding-bottom: 94px;
+  display: none;
 }
 
-.about-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .about {
+    display: contents;
+    padding-top: 47px;
+    padding-bottom: 94px;
+  }
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .about-sec {
