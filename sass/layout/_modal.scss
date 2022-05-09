@@ -1,12 +1,12 @@
 .modal {
-    position: absolute;
+    display: flex;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    overflow: hidden auto;
+    overflow: none;
     padding: 20px 0;
-    display: flex;
 }
 // .modal {
 //     position: absolute;

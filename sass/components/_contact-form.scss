@@ -4,8 +4,6 @@
     width: 528px;
     background-color: white;
     position: relative;
-    width: 528px;
-    position: relative;
     background-color: #fff;
     margin: auto;
 }
@@ -89,6 +87,7 @@
 
 .contact-form-input-wrapper {
     position: relative;
+
 }
 
 .contact-form-icon {
@@ -122,7 +121,6 @@
     border: var(--hover-focus-color);
     width: 200px;
     height: 50px;
-    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
@@ -132,6 +130,17 @@
 }
 
 .contact-form-checkbox-label {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #757575;
+    
+    margin-top: 20px;
+    margin-bottom: 30px;
+
     display: flex;
     align-items: center;
     &::before {
@@ -166,11 +175,10 @@
     fill: #ffffff;
 }
 .modal-form-field {
-    max-height: 120px;
+    // max-height: 120px;
     position: relative;
 
     &:not(:nth-child(6)) {
-        margin-bottom: 28px;
         position: relative;
     }
 }
