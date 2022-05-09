@@ -75,7 +75,7 @@
               <a class="nav-list__link link" href="">Контакты</a>
             </li>
           </ul>
-          <div class="container mobile-contact-list">
+          <div class="mobile-contact-list">
             <ul class="contacts-list list">
               <li class="contacts-list__item">
                 <a
@@ -99,24 +99,27 @@
                   info@devstudio.com
                 </a>
               </li>
+              <li>
+                <div class="mobile-wrapper">
+                  <ul class="mobile-social list">
+                    <li class="mobile-social__item">
+                      <a class="mobile-social__link link" href="#">Instagram</a>
+                    </li>
+                    <li class="mobile-social__item">
+                      <a class="mobile-social__link link" href="#">Twitter</a>
+                    </li>
+                    <li class="mobile-social__item">
+                      <a class="mobile-social__link link" href="#">Facebook</a>
+                    </li>
+                    <li class="mobile-social__item">
+                      <a class="mobile-social__link link" href="#">LinkedIn</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
-          <div class="container mobile-wrapper">
-            <ul class="mobile-social list">
-              <li class="mobile-social__item">
-                <a class="mobile-social__link link" href="#">Instagram</a>
-              </li>
-              <li class="mobile-social__item">
-                <a class="mobile-social__link link" href="#">Twitter</a>
-              </li>
-              <li class="mobile-social__item">
-                <a class="mobile-social__link link" href="#">Facebook</a>
-              </li>
-              <li class="mobile-social__item">
-                <a class="mobile-social__link link" href="#">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
+
           <button type="button" class="mobile-menu__close-btn" data-menu-close>
             <svg class="mobile-menu__close-icon" width="40" height="40">
               <use href="./images/sprite.svg#icon-mobile-close"></use>
@@ -146,8 +149,7 @@
                 </div>
                 <h2 class="first-main-list-subtitle">ВНИМАНИЕ К ДЕТАЛЯМ</h2>
                 <p class="first-main-list-paragraph">
-                  Идейные соображения,а также <br />
-                  начало повседневной работы по <br />
+                  Идейные соображения,а также начало повседневной работы по
                   формированию позиций.
                 </p>
               </li>
@@ -161,9 +163,8 @@
                 </div>
                 <h3 class="first-main-list-subtitle">ПУНКТУАЛЬНОСТЬ</h3>
                 <p class="first-main-list-paragraph">
-                  Задача организации,в особенности <br />
-                  же рамки и место обучения кадров <br />
-                  влечет за собой.
+                  Задача организации,в особенности же рамки и место обучения
+                  кадров влечет за собой.
                 </p>
               </li>
             </div>
@@ -176,8 +177,7 @@
                 </div>
                 <h3 class="first-main-list-subtitle">ПЛАНИРОВАНИЕ</h3>
                 <p class="first-main-list-paragraph">
-                  Равным образом консультация с <br />
-                  широким а ктивом в значительной <br />
+                  Равным образом консультация с широким а ктивом в значительной
                   степени обуславливает.
                 </p>
               </li>
@@ -191,8 +191,7 @@
                 </div>
                 <h3 class="first-main-list-subtitle">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                 <p class="first-main-list-paragraph">
-                  Значимость этих проблем настолько <br />
-                  очевидна, что реализация <br />
+                  Значимость этих проблем настолько очевидна, что реализация
                   плановых заданий.
                 </p>
               </li>
@@ -232,189 +231,211 @@
         </div>
       </section>
       <section class="about-sec">
-        <div class="team container">
-          <h2 class="user">Наша команда</h2>
+        <h2 class="user">Наша команда</h2>
+        <div class="team">
           <ul class="second-main-list list">
-            <li class="second-main-list-item">
-              <img
-                src="images/img3.jpg"
-                alt="Мужчина с бородой в очках и рубашке"
-                width="270"
-                height="260"
-              />
-              <div class="team-content-wrapper">
-                <h2 class="second-main-list-subtitle">Игорь Демьяненко</h2>
-                <p class="second-main-list-paragraph" lang="en">
-                  Product Designer
-                </p>
-                <div class="social-link-container">
-                  <ul class="social-list list">
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+            <div class="second-main-list-wrapper">
+              <li class="second-main-list-item">
+                <img
+                  class="team-img"
+                  src="images/img3.jpg"
+                  alt="Мужчина с бородой в очках и рубашке"
+                  width="450"
+                  height="460"
+                />
+                <div class="team-content-wrapper">
+                  <h2 class="second-main-list-subtitle">Игорь Демьяненко</h2>
+                  <p class="second-main-list-paragraph" lang="en">
+                    Product Designer
+                  </p>
+                  <div class="social-link-container">
+                    <ul class="social-list list">
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use
+                              href="./images/sprite.svg#icon-instagram"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use href="./images/sprite.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use href="./images/sprite.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="second-main-list-item">
-              <img
-                src="images/img4.jpg"
-                alt="Женщина в очках"
-                width="270"
-                height="260"
-              />
-              <div class="team-content-wrapper">
-                <h2 class="second-main-list-subtitle">Ольга Репина</h2>
-                <p class="second-main-list-paragraph" lang="en">
-                  Frontend Developer
-                </p>
-                <div class="social-link-container">
-                  <ul class="social-list list">
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+              </li>
+            </div>
+            <div class="second-main-list-wrapper">
+              <li class="second-main-list-item">
+                <img
+                  class="team-img"
+                  src="images/img4.jpg"
+                  alt="Женщина в очках"
+                  width="450"
+                  height="460"
+                />
+                <div class="team-content-wrapper">
+                  <h2 class="second-main-list-subtitle">Ольга Репина</h2>
+                  <p class="second-main-list-paragraph" lang="en">
+                    Frontend Developer
+                  </p>
+                  <div class="social-link-container">
+                    <ul class="social-list list">
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use
+                              href="./images/sprite.svg#icon-instagram"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use href="./images/sprite.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use href="./images/sprite.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="second-main-list-item">
-              <img
-                src="images/img5.jpg"
-                alt="Мужчина в голубой рубашке"
-                width="270"
-                height="260"
-              />
-              <div class="team-content-wrapper">
-                <h2 class="second-main-list-subtitle">Николай Тарасов</h2>
-                <p class="second-main-list-paragraph">Marketing</p>
-                <div class="social-link-container">
-                  <ul class="social-list list">
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+              </li>
+            </div>
+            <div class="second-main-list-wrapper">
+              <li class="second-main-list-item">
+                <img
+                  class="team-img"
+                  src="images/img5.jpg"
+                  alt="Мужчина в голубой рубашке"
+                  width="450"
+                  height="460"
+                />
+                <div class="team-content-wrapper">
+                  <h2 class="second-main-list-subtitle">Николай Тарасов</h2>
+                  <p class="second-main-list-paragraph">Marketing</p>
+                  <div class="social-link-container">
+                    <ul class="social-list list">
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use
+                              href="./images/sprite.svg#icon-instagram"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use href="./images/sprite.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use href="./images/sprite.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="second-main-list-item">
-              <img
-                src="images/img6.jpg"
-                alt="Мужчина с бородой в очках и черной футболке"
-                width="270"
-                height="260"
-              />
-              <div class="team-content-wrapper">
-                <h2 class="second-main-list-subtitle">Михаил Ермаков</h2>
-                <p class="second-main-list-paragraph" lang="en">UI Designer</p>
-                <div class="social-link-container">
-                  <ul class="social-list list">
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__link" href="">
-                        <svg class="social-list__svg">
-                          <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+              </li>
+            </div>
+            <div class="second-main-list-wrapper">
+              <li class="second-main-list-item">
+                <img
+                  class="team-img"
+                  src="images/img6.jpg"
+                  alt="Мужчина с бородой в очках и черной футболке"
+                  width="450"
+                  height="460"
+                />
+                <div class="team-content-wrapper">
+                  <h2 class="second-main-list-subtitle">Михаил Ермаков</h2>
+                  <p class="second-main-list-paragraph" lang="en">
+                    UI Designer
+                  </p>
+                  <div class="social-link-container">
+                    <ul class="social-list list">
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use
+                              href="./images/sprite.svg#icon-instagram"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use href="./images/sprite.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use href="./images/sprite.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-list__item">
+                        <a class="social-list__link" href="">
+                          <svg class="social-list__svg">
+                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
