@@ -16,6 +16,7 @@
 .first-main-list {
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -49,4 +50,17 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--textcolor-paragraph-contacts);
+}
+@media screen and (max-width: 1199px) {
+    .first-main-list_wrapper {
+        width: 270px;
+        height: 251px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .first-main-list_wrapper:not(:last-child) {
+        margin-right: 30px;
+    }
 }
