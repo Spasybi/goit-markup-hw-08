@@ -10,25 +10,12 @@
     align-items: center;
     justify-content: center;
     margin: 15px;
-
-    @media screen and (max-width: 767px) {
-      width: calc((100% - 2 * 67px) / 2);
-      margin: 15px;
-    }
-    @media screen and (min-width: 768px) {
-      width: calc((100% - 3 * 67px) / 3);
-      margin: 15px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: calc((100% - 6 * 30px) / 6);
-      margin: 15px;
-    }
 }
 
 .clients-list-svg {
     display: flex;
-    min-width: 170px;
+    justify-content: center;
+    width: 210px;
     min-height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -41,7 +28,7 @@
 
 .svg-link {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
     align-items: center;
     justify-content: center;
@@ -63,4 +50,16 @@
     display: flex;
     max-width: 40px;
     max-height: 46px;
+}
+
+@media screen and (min-width: 768px) {
+    .clients-list-svg {
+        width: 226px;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .clients-list-svg {
+        width: 170px;
+    }    
 }

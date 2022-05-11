@@ -1,11 +1,34 @@
 .about {
     display: none;
+    padding-bottom: 94px;
 }
+
+.about-list-title {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transform: translateY(-70px);
+
+    p {
+        position: absolute;
+        margin-top: 27px;
+        margin-left: 82px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .about {
-        display: contents;
-        padding-top: 47px;
-        padding-bottom: 94px;
+        display: block;
     }
 
     .about-list {

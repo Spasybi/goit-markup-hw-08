@@ -99,11 +99,14 @@
         border-radius: 2px;
         background: var(--hover-focus-color);
         content: "";
-        bottom: -31px;
+        bottom: -36px;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    .active::after {
+        bottom: -31px;
+    }
     .header-container {
         display: flex;
         align-items: center;

@@ -10,3 +10,15 @@
 .footer-address {
     margin-bottom: 60px;
 }
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+    .footer-address {
+        margin-left: 76px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-address {
+        margin-bottom: 0;
+    }    
+}
